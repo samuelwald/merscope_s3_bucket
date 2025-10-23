@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Path of folder to copy: (e.g /home/samuelwald/mnt/pharma2/merfish_analysis/preissl/swald):"
+echo "Path of folder to copy: (e.g $HOME/merscope_s3_bucket/mnt/pharma2-44/merfish_analysis/preissl/swald):"
 read SRC
 
 echo "Target path (e.g radosgw:spatial_transcriptomics/your/path):"
@@ -8,13 +8,13 @@ read DEST
 
 case "$SRC" in
   *output*)
-    log_file="/home/samuelwald/rclone_logs/merfish_output"
+    log_file="$HOME/merscope_s3_bucket/rclone_logs/merfish_output"
     ;;
   *analysis*)
-    log_file="/home/samuelwald/rclone_logs/merfish_analysis"
+    log_file="$HOME/merscope_s3_bucket/rclone_logs/merfish_analysis"
     ;;
   *raw*)
-    log_file="/home/samuelwald/rclone_logs/merfish_raw"
+    log_file="$HOME/merscope_s3_bucket/rclone_logs/merfish_raw"
     ;;
 esac
 

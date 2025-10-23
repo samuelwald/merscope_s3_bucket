@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rclone mount radosgw: /home/samuelwald/mnt/s3_bucket/ --daemon
+nohup rclone mount radosgw: /home/samuelwald/merscope_s3_bucket/mnt/s3_bucket/ --daemon
