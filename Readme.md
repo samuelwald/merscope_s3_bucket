@@ -8,6 +8,7 @@ wsl --install -d Ubuntu
 ### 2) Install and configure rclone
 ```bash
 sudo apt install rclone
+rclone config # Follow steps to create new config, name should be 'radosgw'
 ```
 The config should look like this:
 ```bash
@@ -32,7 +33,7 @@ cd /scripts
 sudo bash mount_pharma2-44.sh 
 ```
 
-### 5) Mount s3 bucket
+### 5) Mount s3 bucket (Optional, not required for uploading data)
 
 ```bash
 cd /scripts
