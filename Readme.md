@@ -9,6 +9,16 @@ wsl --install -d Ubuntu
 ```bash
 sudo apt install rclone
 ```
+The config should look like this:
+```bash
+rclone config show
+```
+[radosgw]
+type = s3
+provider = Ceph
+access_key_id = ***
+secret_access_key = ***
+endpoint = https://radosgw.public.os.wwu.de
 
 ### 3) Clone repository
 ```bash
