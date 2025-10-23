@@ -8,7 +8,10 @@ wsl --install -d Ubuntu
 ### 2) Install and configure rclone
 ```bash
 sudo apt install rclone
-rclone config # Follow steps to create new config, name should be `radosgw`
+```
+Follow steps to create new config, name should be `radosgw`
+```bash
+rclone config
 ```
 The config should look like this:
 ```bash
