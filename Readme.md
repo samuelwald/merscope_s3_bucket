@@ -13,13 +13,14 @@ The config should look like this:
 ```bash
 rclone config show
 ```
+```text
 [radosgw]
 type = s3
 provider = Ceph
 access_key_id = ***
 secret_access_key = ***
 endpoint = https://radosgw.public.os.wwu.de
-
+```
 ### 3) Clone repository
 ```bash
 git clone https://github.com/samuelwald/merscope_s3_bucket.git
