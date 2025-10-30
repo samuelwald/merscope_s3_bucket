@@ -4,7 +4,7 @@
 ```bash
 wsl --install -d Ubuntu
 ```
-
+To keep wsl running in the background even if the terminal is closed, create a new task in `Task Scheduler` which starts running `wsl.exe -d Ubuntu --exec dbus-launch true` at system start 
 ### 2) Install and configure rclone
 ```bash
 sudo apt install rclone
@@ -40,7 +40,7 @@ sudo ./mount_pharma2-44.sh
 
 ```bash
 cd /scripts
-sudo ./mount_s3_bucket.sh
+./mount_s3_bucket.sh
 ```
 
 ### 6) Upload data
